@@ -22,11 +22,7 @@
 
         function setSearchSentence($sentence)
         {
-            if ($sentence !== "") {
-                $sentence_split = explode(" ", $sentence);
-                $this->search_sentence = $sentence_split;
-            }
-
+            $this->search_sentence = $sentence;
         }
 
         function getSearchWord()
@@ -36,17 +32,7 @@
 
         function setSearchWord($word)
         {
-            if ($word !== "") {
-                $this->search_word = (string) $word;
-
-            // if ($the_search_word) {
-            //     return true;
-            // }
-            // else {
-            //     return "Please enter a word to check";
-            // }
-            }
-
+            $this->search_word = (string) $word;
         }
 
         function getCount()
@@ -62,35 +48,18 @@
 
         function countRepeats() {
 
-            // $split_sentence = explode(" ", $this->getSearchSentence());
-            $split_sentence = $this->getSearchSentence();
+            $split_sentence = explode(" ", $this->getSearchSentence());
             $the_search_word = $this->getSearchWord();
-            $word_count = $this->setCount(0);
+            $word_count = $this->setCount(0); // or $this->getCount();?
 
 
-            if ($this->getSearchWord() && $this->getSearchSentence()) {
-                //run the word count
+            for ($word = 0; $word < count($split_sentence); $word++) {
+                if ($split_sentence[$word] === $the_search_word) {
+                    $word_count++;
+                }
             }
-            else {
-                return "Please enter a single search word and string of words to search";
-            }
 
-
-            // if ($split_sentence) {
-            //     return true;
-            // }
-            // else {
-            //     return "Please enter a string of words";
-            // }
-
-            // foreach ($split_sentence as $char) {
-            //     if (empty($char)) {
-            //         return "Please enter a string of words";
-            //     }
-            //     else {
-            //
-            //     }
-            // }
+            return $word_count;
 
         }
 
