@@ -22,7 +22,11 @@
 
         function setSearchSentence($sentence)
         {
-            $this->search_sentence = (string) $sentence;
+            if ($sentence !== "") {
+                $sentence_split = explode(" ", $sentence);
+                $this->search_sentence = $sentence_split;
+            }
+
         }
 
         function getSearchWord()
@@ -32,7 +36,17 @@
 
         function setSearchWord($word)
         {
-            $this->search_word = (string) $word;
+            if ($word !== "") {
+                $this->search_word = (string) $word;
+
+            // if ($the_search_word) {
+            //     return true;
+            // }
+            // else {
+            //     return "Please enter a word to check";
+            // }
+            }
+
         }
 
         function getCount()
@@ -48,23 +62,35 @@
 
         function countRepeats() {
 
-            $split_sentence = explode(" ", $this->getSearchSentence());
-            // $split_sentence = $this->getSearchSentence();
+            // $split_sentence = explode(" ", $this->getSearchSentence());
+            $split_sentence = $this->getSearchSentence();
             $the_search_word = $this->getSearchWord();
             $word_count = $this->setCount(0);
-            // 
-            // if ($the_search_word) {
+
+
+            if ($this->getSearchWord() && $this->getSearchSentence()) {
+                //run the word count
+            }
+            else {
+                return "Please enter a single search word and string of words to search";
+            }
+
+
+            // if ($split_sentence) {
             //     return true;
             // }
             // else {
-            //     return "Please enter a word to check";
+            //     return "Please enter a string of words";
             // }
 
-            foreach ($split_sentence as $char) {
-                if (empty($char)) {
-                    return "Please enter a string of words";
-                }
-            }
+            // foreach ($split_sentence as $char) {
+            //     if (empty($char)) {
+            //         return "Please enter a string of words";
+            //     }
+            //     else {
+            //
+            //     }
+            // }
 
         }
 
