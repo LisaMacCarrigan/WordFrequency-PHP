@@ -14,16 +14,18 @@ This is a website in Silex that returns how frequently a word appears in a given
 
 * Example Input: _Word_ ""  |
                  _String of Words_ "go there"
-* Example Output: "Please enter a word"
+* Example Output: "Please enter a word to check"
 
 #### 2. The program returns a message if a string of words (i.e. the sentence to check) is not entered.
 
-* Example Input: ""
+* Example Input: _Word_ "go"  |
+                 _String of Words_ ""
 * Example Output: "Please enter a string of words"
 
 #### 3. The program returns a message if the word (i.e. the word to search for) contains a space.
 
-* Example Input: "g o"
+* Example Input: _Word_ "g o"  |
+                 _String of Words_ "go there"
 * Example Output: "Please enter a single word that contains no spaces"
 
 #### 4. When the word to search for is a full word match one time in the string of words, the match count is returned.
