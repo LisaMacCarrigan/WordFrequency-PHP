@@ -90,7 +90,7 @@
 
             //ARRANGE
             $input_word_string_to_check = "go";
-            $input_word_to_check = "not here";
+            $input_word_to_check = "g o there";
             $expected_output = 0;
             $repeat_counter_instance = new RepeatCounter($input_word_string_to_check, $input_word_to_check);
 
