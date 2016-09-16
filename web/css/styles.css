@@ -1,0 +1,27 @@
+#result-header {
+    font-weight: bold;
+    color: black;
+}
+
+.p-text {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+#search-word {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: orange;
+}
+
+#search-sentence {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: orange;
+}
+
+#count {
+    font-size: 1.75em;
+    font-weight: bold;
+    color: #ffd420;
+}
