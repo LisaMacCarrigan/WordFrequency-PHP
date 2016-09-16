@@ -1,5 +1,5 @@
 
-#result-header {
+.main-header {
     font-weight: bold;
     color: #000000;
 }
@@ -7,6 +7,10 @@
 p.primary-text {
     font-size: 1.25em;
     font-weight: bold;
+}
+
+.form-group {
+    font-size: 1.15em;
 }
 
 #search-word {
