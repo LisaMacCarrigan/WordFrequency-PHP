@@ -1,6 +1,6 @@
 # Word Frequency
 
-#### An application that compares a word against a string of words and returns how frequently the word appears in the string. 09.09.2016
+#### An application that compares a word against a string of words and returns how frequently the word appears in the string. 09.16.2016
 
 #### By **Lisa MacCarrigan**
 
