@@ -52,10 +52,15 @@
             $the_search_word = $this->getSearchWord();
             $word_count = $this->setCount(0);
 
-            for ($word = 0; $word < count($split_sentence); $word++) {
-                if ($split_sentence[$word] === $the_search_word) {
-                    $word_count++;
+            if ($the_search_word && $this->getSearchSentence()) {
+                for ($word = 0; $word < count($split_sentence); $word++) {
+                    if ($split_sentence[$word] === $the_search_word) {
+                        $word_count++;
+                    }
                 }
+            }
+            else {
+                return -1;
             }
 
             return $word_count;
