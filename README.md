@@ -10,15 +10,46 @@ This is a website in Silex that returns how frequently a word appears in a given
 
 ## Specifications
 
-#### 1.
+#### 1. The program returns a message if a word (i.e. the word to search for) is not entered.
 
-* Example Input:
-* Example Output:
+* Example Input: ""
+* Example Output: "Please enter a word"
 
-#### 2.
+#### 2. The program returns a message if a string of words (i.e. the sentence to check) is not entered.
 
-* Example Input:
-* Example Output:
+* Example Input: ""
+* Example Output: "Please enter a string of words"
+
+#### 3. The program returns a message if the word (i.e. the word to search for) contains a space.
+
+* Example Input: "g o"
+* Example Output: "Please enter a single word that contains no spaces"
+
+#### 4. When the word to search for is a full word match one time in the string of words, the match count is returned.
+
+* Example Input: _Word_ "Go"
+                 _String of Words_ "Go there."
+* Example Output: 1
+
+#### 5. When the word to search for is a full word match more than one time in the string of words, the match count is returned.
+
+* Example Input #1: _Word_ "Go"
+                 _String of Words_ "Go, go there"
+* Example Output #1: 2
+
+* Example Input #2: _Word_ "Go"
+                 _String of Words_ "Go, go there. Go!"
+* Example Output #2: 3
+
+#### 6. When the word to search for is not a full word match in the string of words, the match count is returned.
+
+* Example Input #1: _Word_ "Go"
+                 _String of Words_ "Not here"
+* Example Output #1: 0
+
+* Example Input #1: _Word_ "Go"
+                 _String of Words_ "g o, there"
+* Example Output #1: 0
 
 ## Setup/Installation Requirements
 
