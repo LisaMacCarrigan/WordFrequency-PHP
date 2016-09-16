@@ -7,9 +7,9 @@
         function test_WordBlank() { // Spec #1
 
             //ARRANGE
-            $input_word_string_to_check =
-            $input_word_to_check =
-            $expected_output =
+            $input_word_string_to_check = "go there";
+            $input_word_to_check = "";
+            $expected_output = "Please enter a word";
             $repeat_counter_instance = new RepeatCounter($input_word_string_to_check, $input_word_to_check);
 
             //ACT

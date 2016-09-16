@@ -48,6 +48,18 @@
 
         function countRepeats() {
 
+            $split_sentence = explode(" ", $this->getSearchSentence());
+            $the_search_word = $this->getSearchWord();
+            $word_count = $this->setCount(0);
+
+            if ($the_search_word) {
+                return true;
+            }
+            else {
+                return "Please enter a word";
+            }
+
+
         }
 
     }
