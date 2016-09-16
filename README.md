@@ -27,27 +27,27 @@ This is a website in Silex that returns how frequently a word appears in a given
 
 #### 4. When the word to search for is a full word match one time in the string of words, the match count is returned.
 
-* Example Input: _Word_ "Go"
+* Example Input: _Word_ "Go"  |
                  _String of Words_ "Go there."
 * Example Output: 1
 
 #### 5. When the word to search for is a full word match more than one time in the string of words, the match count is returned.
 
-* Example Input #1: _Word_ "Go"
+* Example Input #1: _Word_ "Go"  |
                  _String of Words_ "Go, go there"
 * Example Output #1: 2
 
-* Example Input #2: _Word_ "Go"
+* Example Input #2: _Word_ "Go"  |
                  _String of Words_ "Go, go there. Go!"
 * Example Output #2: 3
 
 #### 6. When the word to search for is not a full word match in the string of words, the match count is returned.
 
-* Example Input #1: _Word_ "Go"
+* Example Input #1: _Word_ "Go"  |
                  _String of Words_ "Not here"
 * Example Output #1: 0
 
-* Example Input #1: _Word_ "Go"
+* Example Input #1: _Word_ "Go"  |
                  _String of Words_ "g o, there"
 * Example Output #1: 0
 
