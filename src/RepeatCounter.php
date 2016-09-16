@@ -50,8 +50,7 @@
 
             $split_sentence = explode(" ", $this->getSearchSentence());
             $the_search_word = $this->getSearchWord();
-            $word_count = $this->setCount(0); // or $this->getCount();?
-
+            $word_count = $this->setCount(0);
 
             for ($word = 0; $word < count($split_sentence); $word++) {
                 if ($split_sentence[$word] === $the_search_word) {

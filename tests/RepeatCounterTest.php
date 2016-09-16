@@ -70,37 +70,37 @@
 
         }
 
-        // function test_MultipleMatch() { // Spec #5
-        //
-        //     //ARRANGE
-        //     $input_word_string_to_check =
-        //     $input_word_to_check =
-        //     $expected_output =
-        //     $repeat_counter_instance = new RepeatCounter($input_word_string_to_check, $input_word_to_check);
-        //
-        //     //ACT
-        //     $test_result = $repeat_counter_instance->countRepeats();
-        //
-        //     //ASSERT
-        //     $this->assertEquals($expected_output, $test_result);
-        //
-        // }
+        function test_MultipleMatch() { // Spec #5
 
-        // function test_NoMatch() { // Spec #6
-        //
-        //     //ARRANGE
-        //     $input_word_string_to_check =
-        //     $input_word_to_check =
-        //     $expected_output =
-        //     $repeat_counter_instance = new RepeatCounter($input_word_string_to_check, $input_word_to_check);
-        //
-        //     //ACT
-        //     $test_result = $repeat_counter_instance->countRepeats();
-        //
-        //     //ASSERT
-        //     $this->assertEquals($expected_output, $test_result);
-        //
-        // }
+            //ARRANGE
+            $input_word_string_to_check = "go go";
+            $input_word_to_check = "go";
+            $expected_output = 2;
+            $repeat_counter_instance = new RepeatCounter($input_word_string_to_check, $input_word_to_check);
+
+            //ACT
+            $test_result = $repeat_counter_instance->countRepeats();
+
+            //ASSERT
+            $this->assertEquals($expected_output, $test_result);
+
+        }
+
+        function test_NoMatch() { // Spec #6
+
+            //ARRANGE
+            $input_word_string_to_check = "go";
+            $input_word_to_check = "not here";
+            $expected_output = 0;
+            $repeat_counter_instance = new RepeatCounter($input_word_string_to_check, $input_word_to_check);
+
+            //ACT
+            $test_result = $repeat_counter_instance->countRepeats();
+
+            //ASSERT
+            $this->assertEquals($expected_output, $test_result);
+
+        }
 
     }
 
