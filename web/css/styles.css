@@ -1,9 +1,10 @@
+
 #result-header {
     font-weight: bold;
-    color: black;
+    color: #000000;
 }
 
-.p-text {
+p.primary-text {
     font-size: 1.25em;
     font-weight: bold;
 }
@@ -11,17 +12,31 @@
 #search-word {
     font-size: 1.5em;
     font-weight: bold;
-    color: orange;
+    color: #f16e23;
 }
 
 #search-sentence {
     font-size: 1.5em;
     font-weight: bold;
-    color: orange;
+    color: #f16e23;
 }
 
 #count {
-    font-size: 1.75em;
+    font-size: 2em;
     font-weight: bold;
     color: #ffd420;
+}
+
+.border-block {
+    text-align: center;
+    width: 70%;
+    margin-top: 15%;
+    margin-right: 15%;
+    margin-left: 15%;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+button.btn {
+    margin-bottom: 20px;
 }

@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
-    {% include "partials/header.html" %}
+    {% include "partials/search_result_header.html" %}
     <body>
         <div class="container">
-            <h2 id="result-header">Search Result</h2>
-            <p id="search-word">Search Word:</p>
-            <p class="p-text">{{ word_searched }}</p>
-            <p id="search-sentence">Sentence/Words:</p>
-            <p class="p-text">{{ sentence_searched }}</p>
-            <p id="count">Count is equal to {{ word_count }}</p>
-
-            <form action="/">
-                <button type="submit" class="btn btn-default">Go Back</button>
-            </form>
-
+            <div class="border-block">
+                <h1 id="result-header">Search Result</h1>
+                <hr>
+                <p id="search-word">Search Word:</p>
+                <p class="primary-text"> {{ word_searched }} </p>
+                <p id="search-sentence">Sentence/Words:</p>
+                <p class="primary-text"> {{ sentence_searched }} </p>
+                <p id="count">Count is equal to {{ word_count }} </p>
+                <hr>
+                <form action="/">
+                    <button type="submit" class="btn btn-default">Go Back</button>
+                </form>
+            </div>
         </div>
     </body>
 </html>
